@@ -1,0 +1,43 @@
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  cursor: pointer;
+
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background var(--main-animation);
+
+  color: var(--light-txt-cl);
+  background-color: var(--accent-cl);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-active-cl);
+  }
+
+  &--theme-light {
+    font-weight: 500;
+    line-height: 1.62;
+
+    padding: 6px 22px;
+    transition: background var(--main-animation), box-shadow var(--main-animation),
+      color var(--main-animation);
+
+    color: var(--main-txt-cl);
+    background-color: var(--secondary-bg-cl);
+  }
+
+  &--theme-light:hover,
+  &--theme-light:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+
+    color: var(--light-txt-cl);
+    background-color: var(--accent-cl);
+  }
+}

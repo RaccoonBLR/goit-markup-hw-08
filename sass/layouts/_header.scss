@@ -1,0 +1,16 @@
+.header {
+  max-width: 1600px;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--header-brdr);
+
+  background-color: var(--light-bg-cl);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 93px;
+}

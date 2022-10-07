@@ -1,0 +1,28 @@
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.about__item {
+  position: relative;
+}
+
+.about__title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 0px;
+
+  height: 70px;
+  width: 100%;
+
+  color: var(--light-txt-cl);
+  background-color: var(--about-item-bg);
+}

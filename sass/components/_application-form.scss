@@ -1,0 +1,165 @@
+.application-form__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+
+  display: block;
+  text-align: center;
+
+  margin-bottom: 12px;
+}
+
+.application-form__group {
+  display: block;
+  margin-bottom: 10px;
+
+  position: relative;
+}
+
+.application-form__caption {
+  font-size: 12px;
+  letter-spacing: 0.01em;
+
+  display: block;
+  margin-bottom: 4px;
+
+  color: var(--secondary-txt-cl);
+}
+
+.application-form__input {
+  width: 100%;
+  height: 40px;
+
+  padding: 12px 42px;
+
+  border: 1px solid var(--input-modal-brdr);
+  border-radius: 4px;
+  outline: none;
+
+  transition: border var(--main-animation);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-cl);
+  }
+}
+
+.application-form__icon {
+  position: absolute;
+
+  top: 28px;
+  left: 12px;
+
+  transition: fill var(--main-animation);
+
+  fill: var(--dark-icon-cl);
+
+  .application-form__input:hover + &,
+  .application-form__input:focus + & {
+    fill: var(--accent-cl);
+  }
+}
+
+.application-form__message-group {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.application-form__caption {
+  font-size: 12px;
+  letter-spacing: 0.01em;
+
+  display: block;
+  margin-bottom: 4px;
+
+  color: var(--secondary-txt-cl);
+}
+
+.application-form__message {
+  font-size: 12px;
+  letter-spacing: 0.01em;
+
+  width: 100%;
+  height: 120px;
+
+  display: block;
+  padding: 12px 16px;
+
+  border: 1px solid var(--input-modal-brdr);
+  border-radius: 4px;
+  outline: none;
+
+  resize: none;
+  transition: border var(--main-animation);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-cl);
+  }
+
+  &::placeholder {
+    color: var(--modal-placeholder-cl);
+  }
+}
+
+.application-form__agreement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 30px;
+}
+
+.application-form__agreement-icon {
+  cursor: pointer;
+}
+
+.application-form__icon-checked {
+  opacity: 0;
+
+  .application-form__checkbox:checked + .application-form__agreement-icon & {
+    opacity: 1;
+    transition: opacity var(--main-animation);
+  }
+}
+
+.application-form__icon-unchecked {
+  opacity: 1;
+  fill: var(--dark-icon-cl);
+
+  .application-form__checkbox:checked + .application-form__agreement-icon & {
+    opacity: 0;
+    transition: opacity var(--main-animation);
+  }
+}
+
+.application-form__desc {
+  line-height: 1.71;
+  user-select: none;
+
+  color: var(--secondary-txt-cl);
+}
+
+.application-form__link {
+  text-decoration: underline;
+  transition: color var(--main-animation);
+  color: var(--accent-cl);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-active-cl);
+  }
+}
+
+.application-form__btn {
+  display: block;
+
+  padding: 10px 52px;
+  margin: 0 auto;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-active-cl);
+  }
+}

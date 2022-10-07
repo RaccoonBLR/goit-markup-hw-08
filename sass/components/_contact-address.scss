@@ -1,0 +1,27 @@
+.contact-address {
+  font-style: normal;
+  line-height: 1.71;
+
+  width: 231px;
+
+  color: var(--footer-contacts-cl);
+}
+
+.contact-address__list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.contact-address__link {
+  transition: color var(--main-animation);
+
+  &--light {
+    color: var(--light-txt-cl);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
+}
