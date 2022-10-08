@@ -7,8 +7,23 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &--no-padding-top {
+      padding-top: 0px;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    &--no-padding-top {
+      display: none;
+    }
+  }
 
   &--other-bg {
     text-align: center;
@@ -17,16 +32,16 @@ body {
 
     background-color: var(--secondary-bg-cl);
   }
-
-  &--no-padding-top {
-    padding-top: 0px;
-  }
 }
 
 .section__title {
   font-weight: 700;
-  font-size: 36px;
   text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
 
-  margin-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
