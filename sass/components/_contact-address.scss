@@ -5,6 +5,10 @@
   width: 231px;
 
   color: var(--footer-contacts-cl);
+
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+  }
 }
 
 .contact-address__list {
