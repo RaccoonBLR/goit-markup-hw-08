@@ -22,9 +22,6 @@
 .modal {
   position: absolute;
 
-  width: 528px;
-  height: 581px;
-
   top: 50%;
   left: 50%;
 
@@ -38,6 +35,20 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   background-color: var(--light-bg-cl);
+
+  @media screen and (max-width: 479px) {
+    max-width: 94%;
+  }
+
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+    height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 
   .backdrop.is-hidden & {
     scale: 0;
