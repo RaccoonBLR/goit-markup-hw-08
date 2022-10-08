@@ -6,8 +6,23 @@
   gap: 30px;
 }
 
+.client__item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+
+  @media screen and (max-width: 767px) {
+    --items: 2;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    --items: 3;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --items: 6;
+  }
+}
+
 .client__link {
-  width: 170px;
   height: 92px;
 
   display: flex;
