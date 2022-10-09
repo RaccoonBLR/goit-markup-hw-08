@@ -28,11 +28,35 @@
   height: 100%;
 
   transform: translateX(100%);
-  transition: translate var(--main-animation);
+  transition: transform var(--main-animation);
 
   background-color: var(--light-bg-cl);
 
   &.is-open {
     transform: translateX(0);
+  }
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  position: absolute;
+
+  top: 10px;
+  right: 15px;
+
+  width: 40px;
+  height: 40px;
+
+  border: 0;
+
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-cl);
   }
 }
