@@ -1110,13 +1110,38 @@ img {
   height: 100%;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: translate var(--main-animation);
-  transition: translate var(--main-animation);
+  -webkit-transition: -webkit-transform var(--main-animation);
+  transition: -webkit-transform var(--main-animation);
+  transition: transform var(--main-animation);
+  transition: transform var(--main-animation), -webkit-transform var(--main-animation);
   background-color: var(--light-bg-cl);
 }
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.menu-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background-color: transparent;
+}
+.menu-toggle:hover, .menu-toggle:focus {
+  fill: var(--accent-cl);
 }
 
 .application-form__title {
