@@ -129,8 +129,24 @@
   display: flex;
   justify-content: start;
   text-align: center;
-
   gap: 20px;
+}
+
+.mobile-socials__item {
+  position: relative;
+
+  &:not(:last-child)::after {
+    content: '';
+    position: absolute;
+
+    width: 1px;
+    height: 22px;
+
+    top: 0;
+    right: -10px;
+
+    background-color: var(--input-modal-brdr);
+  }
 }
 
 .mobile-socials__link {
