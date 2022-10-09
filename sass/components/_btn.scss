@@ -25,6 +25,8 @@
     line-height: 1.62;
 
     padding: 6px 23px;
+
+    box-shadow: none;
     transition: background var(--main-animation), box-shadow var(--main-animation),
       color var(--main-animation);
 
