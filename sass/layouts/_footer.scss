@@ -19,7 +19,7 @@
 
 .footer__address-wrapper {
   @media screen and (max-width: 767px) {
-    margin: 0 auto;
+    margin-bottom: 60px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -28,7 +28,6 @@
 
   @media screen and (max-width: 1199px) {
     text-align: center;
-    margin-bottom: 60px;
   }
 
   @media screen and (min-width: 1200px) {
