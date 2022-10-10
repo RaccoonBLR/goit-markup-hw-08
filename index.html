@@ -133,33 +133,54 @@
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="about">
             <li class="about__item">
-              <img
-                class="about__img"
-                src="./images/about/img-1.jpg"
-                alt="Набор текста на клавиатуре"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/about-1_lg-@1x.jpg 1x,
+                    ./images/about/about-1_lg-@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="about__img"
+                  src="./images/about/about-1_lg-@1x.jpg"
+                  alt="Набор текста на клавиатуре"
+                />
+              </picture>
               <h3 class="about__title">Десктопні додатки</h3>
             </li>
             <li class="about__item">
-              <img
-                class="about__img"
-                src="./images/about/img-2.jpg"
-                alt="Работа за ноутбуком"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/about-2_lg-@1x.jpg 1x,
+                    ./images/about/about-2_lg-@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="about__img"
+                  src="./images/about/about-2_lg-@1x.jpg"
+                  alt="Работа за ноутбуком"
+                />
+              </picture>
               <h3 class="about__title">Мобільні додатки</h3>
             </li>
             <li class="about__item">
-              <img
-                class="about__img"
-                src="./images/about/img-3.jpg"
-                alt="Работа с графикой на планшете"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/about-3_lg-@1x.jpg 1x,
+                    ./images/about/about-3_lg-@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="about__img"
+                  src="./images/about/about-3_lg-@1x.jpg"
+                  alt="Работа с графикой на планшете"
+                />
+              </picture>
               <h3 class="about__title">Дизайнерські рішення</h3>
             </li>
           </ul>
@@ -171,13 +192,25 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team/img-1.jpg"
-                alt="Член команды в красной рубашке"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team-1_lg-@1x.jpg 1x, ./images/team/team-1_lg-@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team-1_md-@1x.jpg 1x, ./images/team/team-1_md-@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/team-1_sm-@1x.jpg 1x, ./images/team/team-1_sm-@2x.jpg 2x"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/team-1_sm-@1x.jpg 1x"
+                  alt="Член команды в красной рубашке"
+                />
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -238,13 +271,25 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team/img-2.jpg"
-                alt="Член команды в черном пиджаке"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team-2_lg-@1x.jpg 1x, ./images/team/team-2_lg-@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team-2_md-@1x.jpg 1x, ./images/team/team-2_md-@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/team-2_sm-@1x.jpg 1x, ./images/team/team-2_sm-@2x.jpg 2x"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/team-2_sm-@1x.jpg 1x"
+                  alt="Член команды в черном пиджаке"
+                />
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__title">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -305,13 +350,25 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team/img-3.jpg"
-                alt="Член команды в голубой рубашке"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team-3_lg-@1x.jpg 1x, ./images/team/team-3_lg-@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team-3_md-@1x.jpg 1x, ./images/team/team-3_md-@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/team-3_sm-@1x.jpg 1x, ./images/team/team-3_sm-@2x.jpg 2x"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/team-3_sm-@1x.jpg 1x"
+                  alt="Член команды в голубой рубашке"
+                />
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -372,13 +429,25 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team/img-4.jpg"
-                alt="Член команды в черной футболке"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/team-4_lg-@1x.jpg 1x, ./images/team/team-4_lg-@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team-4_md-@1x.jpg 1x, ./images/team/team-4_md-@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/team-4_sm-@1x.jpg 1x, ./images/team/team-4_sm-@2x.jpg 2x"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/team-4_sm-@1x.jpg 1x"
+                  alt="Член команды в черной футболке"
+                />
+              </picture>
               <div class="team__wrap">
                 <h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
@@ -727,7 +796,6 @@
           <a class="mobile-menu__link" href="">Контакти</a>
         </li>
       </ul>
-
       <ul class="mobile-contacts">
         <li class="mobile-contacts__item">
           <a class="mobile-contacts__link mobile-contacts__link--accent" href="tel:+380961111111">
@@ -738,7 +806,6 @@
           <a class="mobile-contacts__link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
         </li>
       </ul>
-
       <ul class="mobile-socials">
         <li class="mobile-socials__item">
           <a
