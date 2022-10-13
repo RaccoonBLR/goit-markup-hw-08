@@ -54,21 +54,44 @@
   transform: translateY(0);
   transition: transform var(--main-animation);
 
-  padding: 63px 24px;
-
   background-color: var(--overlay-bg);
 
   .portfolio__link:hover &,
   .portfolio__link:focus & {
     transform: translateY(-100%);
   }
+
+  @media screen and (max-width: 479px) {
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+  }
+
+  @media screen and (min-width: 480px) {
+    padding: 77px 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px 77px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
 }
 
 .portfolio__overlay-description {
-  font-size: 18px;
   line-height: 1.55;
 
   color: var(--light-txt-cl);
+
+  @media screen and (min-width: 375px) and (max-width: 424px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 425px) {
+    font-size: 18px;
+  }
 }
 
 .portfolio__wrap {
