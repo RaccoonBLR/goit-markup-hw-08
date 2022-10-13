@@ -97,6 +97,14 @@
   &--current {
     color: var(--accent-cl);
   }
+
+  @media screen and (max-width: 424px) {
+    font-size: 34px;
+  }
+
+  @media screen and (max-width: 374px) {
+    font-size: 29px;
+  }
 }
 
 .mobile-contacts {
@@ -119,9 +127,25 @@
 
   color: var(--secondary-txt-cl);
 
+  @media screen and (max-width: 424px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 374px) {
+    font-size: 17px;
+  }
+
   &--accent {
     font-size: 34px;
     color: var(--accent-cl);
+
+    @media screen and (max-width: 424px) {
+      font-size: 28px;
+    }
+
+    @media screen and (max-width: 374px) {
+      font-size: 24px;
+    }
   }
 }
 
@@ -146,6 +170,10 @@
     right: -10px;
 
     background-color: var(--input-modal-brdr);
+
+    @media screen and (max-width: 424px) {
+      height: 17px;
+    }
   }
 }
 
@@ -156,4 +184,12 @@
   letter-spacing: 0.02em;
 
   color: var(--accent-cl);
+
+  @media screen and (max-width: 424px) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 374px) {
+    font-size: 11px;
+  }
 }
